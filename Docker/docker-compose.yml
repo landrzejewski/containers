@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=training
+      - PGDATA=/data
+    volumes:
+      - storage:/data
+    ports:
+      - "5432:5432"
+  echo:
+    image: landrzejewski/echo-server
+    deploy:
+      replicas: 10
+volumes:
+  storage:
+    driver: local
+    external: false
+

@@ -51,3 +51,5 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 w
 G.idea/sonarlint/issuestore/c/9/c9669add250eebdab1e386e9003b8c1f7bf060f7,b\a\badbded426a014b7dd2a04b9e090d5be8ff34076
+I
+Docker/docker-compose.yml,9\9\9928ac99c68c361676d183e871c3281f57a7b10c
