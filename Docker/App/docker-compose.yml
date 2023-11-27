@@ -27,6 +27,15 @@ services:
       replicas: 3
     networks:
       training-network:
+  proxy:
+    image: nginx:1.25-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./proxy:/etc/nginx/conf.d
+    networks:
+      training-network:
 volumes:
   storage:
     driver: local
