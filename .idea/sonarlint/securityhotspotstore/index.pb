@@ -56,3 +56,7 @@ I
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+K
+Docker/App/users/Dockerfile,b\e\be33754ee0c6cbb7354939807d1506f497c1dcd5
+M
+Docker/App/docker-compose.yml,1\3\13ad159f5eb2e0dbe9c03e20229700cdfe7f3c55

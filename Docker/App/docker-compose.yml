@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: on-failure
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=training
+      - PGDATA=/data
+    volumes:
+      - storage:/data
+      - ./scripts:/docker-entrypoint-initdb.d
+    networks:
+      training-network:
+  users:
+    image: landrzejewski/users
+    restart: on-failure
+    depends_on:
+      - postgres
+    environment:
+      - DB_USER=admin
+      - DB_PASSWORD=admin
+      - DB_HOST=postgres
+      - DB_NAME=training
+    deploy:
+      replicas: 3
+    networks:
+      training-network:
+volumes:
+  storage:
+    driver: local
+    external: false
+networks:
+  training-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
