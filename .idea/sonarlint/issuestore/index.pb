@@ -104,3 +104,7 @@ L
 Kubernetes/long-task-job.yml,a\4\a442061255621e6b4037d79c5aa3da5c2877ecaa
 Q
 !Kubernetes/long-task-cron-job.yml,f\2\f240a7ca33de5cd7fad8039959dc7813f3ceeeca
+]
+-Kubernetes/echo-server-service-cluster-ip.yml,9\7\9725eb72fe1fb60ae8a3cc2c2b3039248a157418
+\
+,Kubernetes/echo-server-service-node-port.yml,0\9\0914c80e68acd4f8ed33b634a0da182cc1ee83cf
