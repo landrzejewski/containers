@@ -96,3 +96,11 @@ N
 Kubernetes/echo-server-pod.yml,8\0\80e3687d48dd7cc964b32f65bcd341cd83698e1f
 Z
 *Kubernetes/echo-server-pod-with-labels.yml,1\9\19d4146596f497e535b99d776643f7091326b9c0
+V
+&Kubernetes/echo-server-replica-set.yml,3\7\371c676902b2bec80bdc42cd8aaa3bb6bf832b51
+X
+(Kubernetes/status-monitor-daemon-set.yml,8\c\8ce03151a05ff1784f239c43717b9ecb6152e6e5
+L
+Kubernetes/long-task-job.yml,a\4\a442061255621e6b4037d79c5aa3da5c2877ecaa
+Q
+!Kubernetes/long-task-cron-job.yml,f\2\f240a7ca33de5cd7fad8039959dc7813f3ceeeca
