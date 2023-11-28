@@ -1,0 +1,9 @@
+services:
+  mongo:
+    image: mongo:7
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+      - MONGO_INITDB_ROOT_DATABASE=payments
+    volumes:
+      - ./data/mongo:/data/db

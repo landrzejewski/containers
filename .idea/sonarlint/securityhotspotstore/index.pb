@@ -60,3 +60,23 @@ K
 Docker/App/users/Dockerfile,b\e\be33754ee0c6cbb7354939807d1506f497c1dcd5
 M
 Docker/App/docker-compose.yml,1\3\13ad159f5eb2e0dbe9c03e20229700cdfe7f3c55
+S
+#Docker/users-app/docker-compose.yml,1\a\1a5493688c8e95ed35804e367e26013e8bd0d9dc
+V
+&Docker/payments-app/docker-compose.yml,1\a\1a770e62c0be5fac16c47cbdf39abdbefe9c7262
+N
+Docker/payments-app/Dockerfile,1\4\14ab750ac3384dd8d37d4c3d614907ccadf84de9
+S
+#Docker/users-app/users/package.json,f\3\f322e37b29bae2f607556b8be54758685a362258
+Q
+!Docker/users-app/users/queries.js,8\f\8fb5fd1fe25baafec9f1070b05e8d0e969be5e6c
+S
+#Docker/users-app/scripts/tables.sql,3\8\38133dfd012111e75a05d62a76f07232a5b9c91f
+P
+ Docker/users-app/html/index.html,4\0\401feb188e40e5ecc81cfec953c337b103f2ce58
+R
+"Docker/users-app/proxy/server.conf,8\6\86110f5942adaf2382f9c4fff3372945e61d929d
+Q
+!Docker/users-app/users/Dockerfile,b\1\b1df48932df4f4e272471fe4d14b0d2b5b64d64d
+O
+Docker/users-app/users/index.js,5\d\5df3f65c2dcdf6f0cb7637798698dcc2a8db9722
