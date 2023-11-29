@@ -114,3 +114,7 @@ I
 Kubernetes/admin-user.yml,7\1\713488668c7c84f845e11d195fa2a0e6d2e317a2
 N
 Kubernetes/metrics-server.yaml,3\b\3b6cf749b3032eb69ae494a354bc88a6c65bb3ed
+U
+%Kubernetes/echo-server-deployment.yml,6\8\682cfddd2440e30c5cb1972a821b0f0b9e3b6bd1
+Q
+!Kubernetes/gfs-volume-service.yml,4\1\41269d23c6eb06646a1ed6f056920691f074e9ef
