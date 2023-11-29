@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: training
+  name: payments-deployment
+  annotations:
+    kubernetes.io/change-cause: "Initial release"
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app-name: payments
+  template:
+    metadata:
+      namespace: training
+      labels:
+        app-name: payments
+    spec:
+      containers:
+        - name: payments
+          image: landrzejewski/payments
+          ports:
+            - containerPort: 8000
+              name: http
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://postgres-service:5432/payments
+          resources:
+            requests:
+              memory: 512M
+          livenessProbe:
+            httpGet:
+              port: 8000
+              path: /actuator/health
+            initialDelaySeconds: 60
+            periodSeconds: 180
+            failureThreshold: 3

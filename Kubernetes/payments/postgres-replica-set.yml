@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  namespace: training
+  name: postgres
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app-name: postgres
+  template:
+    metadata:
+      namespace: training
+      labels:
+        app-name: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16-alpine
+          ports:
+            - containerPort: 5432
+              name: db
+          env:
+            - name: POSTGRES_USER
+              value: admin
+            - name: POSTGRES_PASSWORD
+              value: admin
+            - name: POSTGRES_DB
+              value: payments
+          resources:
+            requests:
+              memory: 512M
