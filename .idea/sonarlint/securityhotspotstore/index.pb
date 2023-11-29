@@ -122,3 +122,7 @@ X
 (Kubernetes/echo-server-deployment-v2.yml,5\2\52e95e2942647ad0fda574a3f208cf856c61f7af
 N
 Kubernetes/sqrt-deployment.yml,5\f\5fcf1a16dc4bd8d538322e5cf1c73f034259aa40
+Q
+!Kubernetes/updater-config-map.yml,d\7\d7a58b6d6bd89c3d8a387aa664ff3b56fb3259f3
+J
+Kubernetes/updater-pod.yml,0\e\0e13132df2991f50eb554759cda7468f45aff99f

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: updater-config-map
+  namespace: training
+data:
+  INTERVAL: '30'
+  user.properties: |
+    color=black
+    env=dev
