@@ -4,10 +4,10 @@ metadata:
   namespace: training
   name: payments-service
 spec:
-  type: LoadBalancer
+  #type: LoadBalancer
   selector:
     app-name: payments
   ports:
     - port: 80
       targetPort: http
-      nodePort: 30001
+      #nodePort: 30001

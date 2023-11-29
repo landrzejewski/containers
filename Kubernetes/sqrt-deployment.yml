@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqrt-deployment
+  namespace: training
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app-name: sqrt
+  template:
+    metadata:
+      namespace: training
+      labels:
+        app-name: sqrt
+    spec:
+      containers:
+        - name: sqrt
+          image: registry.k8s.io/hpa-example
+          ports:
+            - containerPort: 80
+              name: http
+          resources:
+            requests:
+              cpu: 220m
+            limits:
+              cpu: 500m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sqrt-service
+  namespace: training
+spec:
+  selector:
+    app-name: sqrt
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  namespace: training
+  name: sqrt-autoscaler
+spec:
+  minReplicas: 1
+  maxReplicas: 10
+  scaleTargetRef:
+    kind: Deployment
+    name: sqrt-deployment
+    apiVersion: apps/v1
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50

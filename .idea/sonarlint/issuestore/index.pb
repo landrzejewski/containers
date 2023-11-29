@@ -118,3 +118,7 @@ U
 %Kubernetes/echo-server-deployment.yml,6\8\682cfddd2440e30c5cb1972a821b0f0b9e3b6bd1
 Q
 !Kubernetes/gfs-volume-service.yml,4\1\41269d23c6eb06646a1ed6f056920691f074e9ef
+X
+(Kubernetes/echo-server-deployment-v2.yml,5\2\52e95e2942647ad0fda574a3f208cf856c61f7af
+N
+Kubernetes/sqrt-deployment.yml,5\f\5fcf1a16dc4bd8d538322e5cf1c73f034259aa40

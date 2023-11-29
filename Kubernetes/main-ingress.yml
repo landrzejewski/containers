@@ -3,6 +3,9 @@ kind: Ingress
 metadata:
   namespace: training
   name: main-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: "nginx"
   rules:
@@ -10,9 +13,17 @@ spec:
         paths:
           - pathType: Prefix
             path:
-              /echo
+              /echo-app
             backend:
               service:
                 name: echo-server-service
+                port:
+                  number: 80
+          - pathType: ImplementationSpecific
+            path:
+              /payments-app(/|$)(.*)
+            backend:
+              service:
+                name: payments-service
                 port:
                   number: 80
