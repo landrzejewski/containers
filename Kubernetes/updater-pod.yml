@@ -21,3 +21,25 @@ spec:
       envFrom:
         - configMapRef:
             name: updater-config-map
+      volumeMounts:
+          - name: config
+            mountPath: /config
+          - name: swap
+            mountPath: /var/htdocs
+    - name: www
+      image: nginx:1.25-alpine
+      ports:
+        - containerPort: 80
+          name: http
+      volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: swap
+  volumes:
+    - name: config
+      configMap:
+        name: updater-config-map
+    - name: swap
+      persistentVolumeClaim:
+        claimName: updater-pvc
+      #emptyDir:
+      #  medium: Memory

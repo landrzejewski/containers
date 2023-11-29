@@ -126,3 +126,7 @@ Q
 !Kubernetes/updater-config-map.yml,d\7\d7a58b6d6bd89c3d8a387aa664ff3b56fb3259f3
 J
 Kubernetes/updater-pod.yml,0\e\0e13132df2991f50eb554759cda7468f45aff99f
+Z
+*Kubernetes/updater-persistence-volumes.yml,f\b\fbe54b901ff50c70fd0159f7c6486b80755b06ee
+_
+/Kubernetes/updater-persistence-volume-claim.yml,6\9\69c1da48f42e336fe6602e599f0769cf27212698
