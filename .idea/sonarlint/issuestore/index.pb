@@ -130,3 +130,11 @@ Z
 *Kubernetes/updater-persistence-volumes.yml,f\b\fbe54b901ff50c70fd0159f7c6486b80755b06ee
 _
 /Kubernetes/updater-persistence-volume-claim.yml,6\9\69c1da48f42e336fe6602e599f0769cf27212698
+B
+Jenkins/Dockerfile,8\8\8882ce83f52c3fc1f3d08241d56ed9df320a789a
+B
+Jenkins/jenkins.md,4\4\444a9bd03bf8542776b637424f3f8c092e70e1f8
+>
+Jenkins/run.sh,7\1\71f3b38eea98ee8dafe21496e7b9e05d03375706
+B
+Jenkins/prepare.sh,3\2\3240bb798bd6b45232bf7261b1b7ef0132325b96
