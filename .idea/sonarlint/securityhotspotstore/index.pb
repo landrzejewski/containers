@@ -138,3 +138,7 @@ B
 Jenkins/run.sh,7\1\71f3b38eea98ee8dafe21496e7b9e05d03375706
 B
 Jenkins/prepare.sh,3\2\3240bb798bd6b45232bf7261b1b7ef0132325b96
+;
+Jenkins/ssh,c\0\c0e3ee1a410390f0af7f965fd9c98678a8323b5b
+?
+Jenkins/ssh.pub,9\9\9974633959db9324a0b22db488e753563e0f70bc
